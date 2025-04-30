@@ -60,15 +60,6 @@ jobs:
                 shell: bash
         runs-on: ${{ matrix.os }}
         steps:
-            - uses: actions/checkout@v4
-            - uses: actions/download-artifact@v4
-              with:
-                  name: formula
-                  path: "${{ env.FORMULA_DIR }}/"
-
-            # Debug
-            - run: ls -Rlp Formula
-
             - name: Install Homebrew (Optional)
               run: |
                   if ! which brew &> /dev/null; then
@@ -78,8 +69,11 @@ jobs:
             - id: homebrew
               uses: Homebrew/actions/setup-homebrew@master
 
-            # Debug
-            - run: ls -Rlp Formula
+            - uses: actions/checkout@v4
+            - uses: actions/download-artifact@v4
+              with:
+                  name: formula
+                  path: "${{ env.FORMULA_DIR }}/"
 
             - name: Restore cache for Homebrew Bundler RubyGems
               uses: actions/cache@v4
