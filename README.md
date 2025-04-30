@@ -11,25 +11,38 @@
 ### 1. Add Tap
 
 ```shell
-brew tap AsherJingkongChen/-
+brew tap asherjingkongchen/-
 ```
 
 ### 2. Use Formulae
 
--   **Info / Install:**
+-   **Install / Info:**
+
     ```shell
-    brew info AsherJingkongChen/-/formula-example
-    brew install AsherJingkongChen/-/formula-example
+    brew install asherjingkongchen/-/formula-example
+    brew install formula-example
+    brew info asherjingkongchen/-/formula-example
+    brew info formula-example
     ```
+
+    > [!TIP]
+    >
+    > The command `brew install asherjingkongchen/-/formula-example`
+    > will automatically tap the repository `AsherJingkongChen/homebrew--`.
+
 -   **Search:**
+
     ```shell
-    brew search formula-example
-    brew search --desc example --eval-all --quiet
+    brew search '/^asher.+/-/'
+    brew search example
     ```
+
 -   **Uninstall / Untap:**
+
     ```shell
-    brew uninstall AsherJingkongChen/-/formula-example
-    brew untap AsherJingkongChen/-
+    brew uninstall --force asherjingkongchen/-/formula-example
+    brew uninstall --force formula-example
+    brew untap asherjingkongchen/-
     ```
 
 ### 3. Update
@@ -41,6 +54,6 @@ brew upgrade
 
 ## Help
 
--   **Issues about Homebrew:** [Homebrew Documentation](https://docs.brew.sh).
--   **Issues about Formulae:** [Formula Cookbook](https://docs.brew.sh/Formula-Cookbook).
--   **Issues about this tap:** [GitHub Issues](https://github.com/AsherJingkongChen/homebrew--/issues).
+-   **`Issues about Homebrew`:** [`Homebrew Documentation`](https://docs.brew.sh).
+-   **`Issues about Formulae`:** [`Formula Cookbook`](https://docs.brew.sh/Formula-Cookbook).
+-   **`Issues about this tap`:** [`GitHub Issues`](https://github.com/AsherJingkongChen/homebrew--/issues).
