@@ -77,12 +77,13 @@ jobs:
                   name: formula
                   path: "${{ env.FORMULA_DIR }}/"
 
-            - name: Restore cache for Homebrew Bundler RubyGems
+            - name: Restore cache for Homebrew
               uses: actions/cache@v4
               with:
-                  key: ${{ runner.os }}-rubygems-${{ steps.homebrew.outputs.gems-hash }}
-                  path: ${{ steps.homebrew.outputs.gems-path }}
-                  restore-keys: ${{ runner.os }}-rubygems-
+                  key: "${{ runner.os }}-${{ runner.arch }}-homebrew-${{ steps.homebrew.outputs.gems-hash }}"
+                  path: |
+                      "${{ steps.homebrew.outputs.gems-path }}"
+                  restore-keys: "${{ runner.os }}-${{ runner.arch }}-homebrew-"
 
             - name: Test formula
               run: |
