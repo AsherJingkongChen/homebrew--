@@ -18,6 +18,7 @@ concurrency:
 
 env:
     FORMULA_DIR: "Formula"
+    FORMULA_NAME: "${{ inputs.name }}"
     FORMULA_PATH: "Formula/${{ inputs.name }}.rb"
 
 jobs:
@@ -86,8 +87,8 @@ jobs:
               run: |
                   brew style "./${FORMULA_PATH}"
                   brew reinstall --display-times --formula "./${FORMULA_PATH}"
-                  brew test "./${FORMULA_PATH}"
-                  brew uninstall --formula --verbose "./${FORMULA_PATH}"
+                  brew test "${FORMULA_NAME}"
+                  brew uninstall "${FORMULA_NAME}"
 
     update:
         needs: test
