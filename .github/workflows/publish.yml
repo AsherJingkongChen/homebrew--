@@ -90,7 +90,7 @@ jobs:
                   brew style "./${FORMULA_PATH}"
                   brew reinstall --display-times --formula "./${FORMULA_PATH}"
                   brew test "./${FORMULA_PATH}"
-                  brew uninstall "./${FORMULA_PATH}"
+                  brew uninstall --formula "./${FORMULA_PATH}"
 
     update:
         needs: test
