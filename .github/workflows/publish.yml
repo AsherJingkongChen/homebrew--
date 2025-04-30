@@ -66,6 +66,15 @@ jobs:
                   name: formula
                   path: "${{ env.FORMULA_DIR }}/"
 
+            # Debug
+            - run: ls -Rlp Formula
+
+            - name: Install Homebrew (Optional)
+              run: |
+                  if ! which brew &> /dev/null; then
+                    NONINTERACTIVE=1 \
+                    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+                  fi
             - id: homebrew
               uses: Homebrew/actions/setup-homebrew@master
 
