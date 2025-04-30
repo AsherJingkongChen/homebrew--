@@ -25,10 +25,10 @@ brew tap asherjingkongchen/-
     brew info formula-example
     ```
 
-    > [!TIP]
+    > **💡 Tip**
     >
     > The command `brew install asherjingkongchen/-/formula-example`
-    > will automatically tap the repository `AsherJingkongChen/homebrew--`.
+    > will automatically tap the repository `AsherJingkongChen/homebrew--`
 
 -   **Search:**
 
