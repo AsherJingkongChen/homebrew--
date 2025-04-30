@@ -82,15 +82,12 @@ jobs:
                   path: ${{ steps.homebrew.outputs.gems-path }}
                   restore-keys: ${{ runner.os }}-rubygems-
 
-            # Debug
-            - run: ls -Rlp Formula
-
             - name: Test formula
               run: |
                   brew style "./${FORMULA_PATH}"
                   brew reinstall --display-times --formula "./${FORMULA_PATH}"
                   brew test "./${FORMULA_PATH}"
-                  brew uninstall --formula "./${FORMULA_PATH}"
+                  brew uninstall --formula --verbose "./${FORMULA_PATH}"
 
     update:
         needs: test
