@@ -30,3 +30,17 @@ Use your **`GH_TOKEN`** to start the workflow defined in [`./.github/workflows/p
 ### Resources
 
 -   [**Example**](https://github.com/AsherJingkongChen/formula-example/blob/main/.github/workflows/ci.yml)
+
+## 4. Create a badge for your formula
+
+Duplicate the following badge URL and update it to fit your formula.
+
+### Source
+
+```markdown
+[![Homebrew](https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fraw.githubusercontent.com%2FAsherJingkongChen%2Fhomebrew--%2Frefs%2Fheads%2Fmain%2FFormula%2Fformula-example.rb&search=version%20%22%28%5B0-9%5D%2B.%5B0-9%5D%2B.%5B0-9%5D%2B%29%22&replace=v%241&style=for-the-badge&label=homebrew&logo=homebrew&logoColor=fc9&labelColor=333&color=b73)](https://github.com/AsherJingkongChen/homebrew--/blob/main/Formula/formula-example.rb)
+```
+
+### Output
+
+[![Homebrew](https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fraw.githubusercontent.com%2FAsherJingkongChen%2Fhomebrew--%2Frefs%2Fheads%2Fmain%2FFormula%2Fformula-example.rb&search=version%20%22%28%5B0-9%5D%2B.%5B0-9%5D%2B.%5B0-9%5D%2B%29%22&replace=v%241&style=for-the-badge&label=homebrew&logo=homebrew&logoColor=fc9&labelColor=333&color=b73)](https://github.com/AsherJingkongChen/homebrew--/blob/main/Formula/formula-example.rb)
