@@ -86,8 +86,7 @@ jobs:
               uses: actions/cache@v4
               with:
                   key: "${{ runner.os }}-${{ runner.arch }}-homebrew-${{ steps.homebrew.outputs.gems-hash }}"
-                  path: |
-                      "${{ steps.homebrew.outputs.gems-path }}"
+                  path: "${{ steps.homebrew.outputs.gems-path }}"
                   restore-keys: "${{ runner.os }}-${{ runner.arch }}-homebrew-"
 
             - name: Test formula
