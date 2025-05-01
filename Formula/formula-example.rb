@@ -10,21 +10,21 @@ class FormulaExample < Formula
   on_arm do
     on_macos do
       url "https://github.com/AsherJingkongChen/formula-example/releases/download/v0.0.0/formula-example-aarch64-apple-darwin-v0.0.0.tgz"
-      sha256 "407f8f4a481e02b9b4c6532abe2aaf24e6f3d7008f162cdabe33a50a81146248"
+      sha256 "e24761fb59bcb8a1faacc22f57894c45410e98faeef1bcfe12ce57da390a3109"
     end
     on_linux do
       url "https://github.com/AsherJingkongChen/formula-example/releases/download/v0.0.0/formula-example-aarch64-unknown-linux-gnu-v0.0.0.tgz"
-      sha256 "fcc9c86ba1faeaed88a6fdd3b6bf46adf1f9dcab967ddf9cecb499a7588d39cb"
+      sha256 "de45c3571dfb3395b689b04a741cb6ee1dd51418347003117def50640a5019ca"
     end
   end
   on_intel do
     on_macos do
       url "https://github.com/AsherJingkongChen/formula-example/releases/download/v0.0.0/formula-example-x86_64-apple-darwin-v0.0.0.tgz"
-      sha256 "1880600cedc4b45e22c2ceea0eff207710a7f782049225a25779f144869fe85f"
+      sha256 "6924aa4d07ed4e99ed99fa4d96975976c83f0fbd73b22c5dfb65390d21c71272"
     end
     on_linux do
       url "https://github.com/AsherJingkongChen/formula-example/releases/download/v0.0.0/formula-example-x86_64-unknown-linux-gnu-v0.0.0.tgz"
-      sha256 "28bd3e488c26ae390e4b42e8d4387f7950d70b5d89c48f88bb14aba06b8b283f"
+      sha256 "4dc99d31655c4d1c2f05fa3d8b132b08d172c8dffa5513be020185bc84d4ae63"
     end
   end
   def install
