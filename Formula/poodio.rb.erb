@@ -9,21 +9,21 @@ class <%= name.split(/-|_/).map(&:capitalize)*'' %> < Formula
   license "<%= license %>"
   on_arm do
     on_macos do
-      url "<%= repository %>/releases/download/v<%= version %>/<%= name %>-aarch64-apple-darwin-v<%= version %>.tgz"
+      url "<%= repository %>/releases/download/<%= tag %>/<%= tag %>-aarch64-apple-darwin.tgz"
       sha256 "<%= sha256_aarch64_apple_darwin %>"
     end
     on_linux do
-      url "<%= repository %>/releases/download/v<%= version %>/<%= name %>-aarch64-unknown-linux-gnu-v<%= version %>.tgz"
+      url "<%= repository %>/releases/download/<%= tag %>/<%= tag %>-aarch64-unknown-linux-gnu.tgz"
       sha256 "<%= sha256_aarch64_unknown_linux_gnu %>"
     end
   end
   on_intel do
     on_macos do
-      url "<%= repository %>/releases/download/v<%= version %>/<%= name %>-x86_64-apple-darwin-v<%= version %>.tgz"
+      url "<%= repository %>/releases/download/<%= tag %>/<%= tag %>-x86_64-apple-darwin.tgz"
       sha256 "<%= sha256_x86_64_apple_darwin %>"
     end
     on_linux do
-      url "<%= repository %>/releases/download/v<%= version %>/<%= name %>-x86_64-unknown-linux-gnu-v<%= version %>.tgz"
+      url "<%= repository %>/releases/download/<%= tag %>/<%= tag %>-x86_64-unknown-linux-gnu.tgz"
       sha256 "<%= sha256_x86_64_unknown_linux_gnu %>"
     end
   end
