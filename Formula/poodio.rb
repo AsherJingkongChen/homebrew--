@@ -10,21 +10,21 @@ class Poodio < Formula
   on_arm do
     on_macos do
       url "https://github.com/AsherJingkongChen/poopoo/releases/download/poodio@0.0.22/poodio@0.0.22-aarch64-apple-darwin.tgz"
-      sha256 "726dcf1daf69d69ca82ec4aaa7546871147da1d8207d02f0cc13402de4a1a19b"
+      sha256 "7a1b1474ebe2905802cc0eee1ba6156958103cd81756b1f7207049396f90e689"
     end
     on_linux do
       url "https://github.com/AsherJingkongChen/poopoo/releases/download/poodio@0.0.22/poodio@0.0.22-aarch64-unknown-linux-gnu.tgz"
-      sha256 "e1642e0130abe058d5845893cced3fb4749af5500f8ece23b717a6773e82106b"
+      sha256 "24a50088d09c79e28120982a0766c4f3820523dc47674b8ae67d2ae82705b5f5"
     end
   end
   on_intel do
     on_macos do
       url "https://github.com/AsherJingkongChen/poopoo/releases/download/poodio@0.0.22/poodio@0.0.22-x86_64-apple-darwin.tgz"
-      sha256 "e8736cbae14fe15ef26e628a7e6be37ae3dae4bbb7e31fb8c0a4815097c520c0"
+      sha256 "dbdce35e716a7996ed30a7efb84a29918688c88279de6e5561a320ff163d88fe"
     end
     on_linux do
       url "https://github.com/AsherJingkongChen/poopoo/releases/download/poodio@0.0.22/poodio@0.0.22-x86_64-unknown-linux-gnu.tgz"
-      sha256 "6f129e64cf2fb9bbe6c18ffaaed787862417e6c44bdf0e2101d8c7577858c031"
+      sha256 "dd3a819a5204c261012d1e44f8822396fdad3945a7fe5512fa110ce5788202f7"
     end
   end
   def install
