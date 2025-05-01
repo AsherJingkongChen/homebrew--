@@ -29,7 +29,7 @@ Use your **`GH_TOKEN`** to start the workflow defined in [`./.github/workflows/p
 
 ### Resources
 
--   [**Example**](https://github.com/AsherJingkongChen/formula-example/blob/main/.github/workflows/ci.yml)
+-   [**Example workflow**](https://github.com/AsherJingkongChen/formula-example/blob/main/.github/workflows/ci.yml)
 
 ## 4. Create a badge for your formula
 
