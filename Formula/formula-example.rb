@@ -5,7 +5,6 @@
 class FormulaExample < Formula
   desc "Simple example binary for Homebrew formula testing"
   homepage "https://github.com/AsherJingkongChen/formula-example"
-  version "0.0.0"
   license "MIT"
   on_arm do
     on_macos do

@@ -5,7 +5,6 @@
 class Poodio < Formula
   desc "Farts poo poo audio"
   homepage "https://github.com/AsherJingkongChen/poopoo/tree/main/poodio#readme"
-  version "0.0.22"
   license "MIT"
   on_arm do
     on_macos do
