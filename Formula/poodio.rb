@@ -1,7 +1,7 @@
 # typed: strict
 # frozen_string_literal: true
 
-# Formula 'poodio', version '0.0.23', created at '2025-05-03T21:47:22Z'
+# Formula 'poodio', version '0.0.23', created at '2025-05-04T05:55:02Z'
 class Poodio < Formula
   desc "Farts poo poo audio"
   homepage "https://github.com/AsherJingkongChen/poopoo/tree/main/poodio#readme"
